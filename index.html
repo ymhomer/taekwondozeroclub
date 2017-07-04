@@ -1,0 +1,508 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Taekwondo Club</title>
+  <meta charset="utf-8">
+  <meta content="Taekwondo Club Society" name="keywords">
+  <meta content="Teakwondo Club - Tunku Abdul Rahman" name="description">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta content="en-my" http-equiv="Content-Language">
+  <link rel="icon" href="image/logo.png" />
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" media="only screen and (max-width: 720px)" href="css/mobile.css" />
+  <link rel="stylesheet" media="only screen and (max-width: 720px)" href="css/desktop.css" />
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+<!-- page layout -->
+<style>
+  body {
+      position: relative;
+      background-image: url("image/bkgd.jpg");
+      background-attachment: fixed;
+  }
+  #overview {padding-top:50px;padding-bottom:0px;color: #fff;}
+  #event {padding-top:30px;padding-bottom:50px; background-color: #AAB7B8;}
+  #contract {padding-top:30px;padding-bottom:50px; background-color: #F9E79F;}
+  #about {padding-top:30px;padding-bottom:50px;color: #fff; background-color: #00bcd4;}
+</style>
+
+<!-- carousel style -->
+<style>
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 85%;
+      margin: auto;
+  }
+</style>
+
+<!-- tooltip function -->
+<script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+});
+</script>
+
+<!-- smooth page scroll
+<script>
+$(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 500);
+        return false;
+      }
+    }
+  });
+});
+
+</script> -->
+
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<!-- header -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#overview">Taekwondo Club</a>
+    </div>
+    <div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="#overview"><span class="glyphicon glyphicon-home"></span> Overview</a></li>
+          <li><a href="#event"><span class="glyphicon glyphicon-star"></span> Event</a></li>
+          <li><a href="#contract"><span class="glyphicon glyphicon-user"></span> Contract</a></li>
+          <li><a href="#about"><span class="glyphicon glyphicon-heart"></span> About</a></li>
+          <!--Dropdown
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Section 4 <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#section41">Section 4-1</a></li>
+              <li><a href="#section42">Section 4-2</a></li>
+            </ul>
+          </li>
+          -->
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+        	<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      		<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Overview -->
+<div id="overview" class="container-fluid">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="animated fadeInUp carousel-inner" role="listbox" style="height:600px">
+      <div class="item active">
+	      <a href="image/Event/bangbangbang/p1.jpg">
+	        <img src="image/Event/bangbangbang/p1.jpg">
+	        <div class="carousel-caption">
+	          <h3>Bukit Siput Performance</h3>
+	          <p>Dance with us!! Bang Bang Bang!!</p>
+	        </div>
+	      </a>
+      </div>
+      <div class="item">
+	      <a href="image/Event/bangbangbang/p1.jpg">
+	        <img src="image/Event/tarcian/p1.jpg">
+	        <div class="carousel-caption">
+	          <h3>Tarcian Come On</h3>
+	          <p>Let's go!! Challenge yourself.</p>
+	        </div>
+	      </a>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+  
+<!-- Event -->
+<div id="event" class="container-fluid">
+  <h1>Event</h1>
+    <!-- Trigger the modal with a button -->
+    
+<!-- Year 2016 -->
+<div class="panel-group" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#y2016">Year 2016 <span class="badge" style="text-align:right">new</span></a>
+      </h4>
+    </div>
+    <div id="y2016" class="panel-collapse collapse in">
+      <div class="panel-body">
+        <div class="col-md-4">
+          <button type="button" class="btn" data-toggle="modal" data-target="#convo2" style="height:350px">
+            <img src="image/Event/bangbangbang/p1.jpg" class="img-thumbnail" alt="Bukit Siput Performance" style="height: 225px" width="300"><br />
+              Convocation Food Stall
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Year 2015 -->
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#y2015">Year 2015</a>
+      </h4>
+    </div>
+    <div id="y2015" class="panel-collapse collapse">
+      <div class="panel-body">
+        <div class="col-md-4">
+          <button type="button" class="btn" data-toggle="modal" data-target="#convo1" style="height:350px">
+            <img src="image/Event/bangbangbang/p1.jpg" class="img-thumbnail" alt="Bukit Siput Performance" style="height: 225px" width="300"><br />
+              Convocation Food Stall
+            </button>
+        </div>
+        <div class="col-md-4">
+          <button type="button" class="btn" data-toggle="modal" data-target="#bukit" style="height:350px">
+            <img src="image/Event/bangbangbang/p1.jpg" class="img-thumbnail" alt="Bukit Siput Performance" style="height: 225px" width="300"><br />
+              Bukit Siput Performance
+          </button>
+        </div>
+        <div class="col-md-4">
+          <button type="button" class="btn" data-toggle="modal" data-target="#tarci" style="height:350px">
+            <img src="image/Event/tarcian/p1.jpg" class="img-thumbnail" alt="Tarcian Come On" style="height: 225px" width="300"><br />
+              Tarcian Come On
+          </button>
+        </div>
+        <div class="col-md-4">
+          <button type="button" class="btn" data-toggle="modal" data-target="#opend2" style="height:350px">
+            <img src="image/Event/bangbangbang/p1.jpg" class="img-thumbnail" alt="Bukit Siput Performance" style="height: 225px" width="300"><br />
+              Open Day Food Stall
+          </button>
+        </div>  
+      </div>
+    </div>
+  </div>
+
+<!-- Year 2014 -->
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#y2014">Year 2014</a>
+      </h4>
+    </div>
+    <div id="y2014" class="panel-collapse collapse">
+      <div class="panel-body">
+        <div class="col-md-4">
+          <button type="button" class="btn" data-toggle="modal" data-target="#opend1" style="height:350px">
+            <img src="image/Event/bangbangbang/p1.jpg" class="img-thumbnail" alt="Bukit Siput Performance" style="height: 225px" width="300"><br />
+              Open Day Food Stall
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Year 2013 -->
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#y2013">Year 2013</a>
+      </h4>
+    </div>
+    <div id="y2013" class="panel-collapse collapse">
+      <div class="panel-body">
+        <div class="col-md-4">
+          <button type="button" class="btn" data-toggle="modal" data-target="#stami" style="height:350px">
+            <img src="image/Event/bangbangbang/p1.jpg" class="img-thumbnail" alt="Bukit Siput Performance" style="height: 225px" width="300"><br />
+              Stamina Race
+          </button>
+        </div>
+        <div class="col-md-4">
+          <button type="button" class="btn" data-toggle="modal" data-target="#telen" style="height:350px">
+            <img src="image/Event/bangbangbang/p1.jpg" class="img-thumbnail" alt="Bukit Siput Performance" style="height: 225px" width="300"><br />
+              Talent Night Performance
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+<!-- Modal part -->
+  <!-- Modal for Bukit Siput Performance -->
+  <div class="modal fade" id="bukit" role="dialog">
+    <div class="modal-dialog modal-lg">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Bukit Siput Performance</h4>
+        </div>
+        <div class="modal-body">
+          <p>Date : 7th November 2015</p>  
+          <div id="bukitCarousel" class="carousel slide" data-ride="carousel">
+		    <!-- Indicators -->
+		    <ol class="carousel-indicators">
+		      <li data-target="#bukitCarousel" data-slide-to="0" class="active"></li>
+		      <li data-target="#bukitCarousel" data-slide-to="1"></li>
+		      <li data-target="#bukitCarousel" data-slide-to="2"></li>
+		      <li data-target="#bukitCarousel" data-slide-to="3"></li>	      
+			  <li data-target="#bukitCarousel" data-slide-to="4"></li>
+			  <li data-target="#bukitCarousel" data-slide-to="5"></li>
+			  <li data-target="#bukitCarousel" data-slide-to="6"></li>
+			  <li data-target="#bukitCarousel" data-slide-to="7"></li>
+			  <li data-target="#bukitCarousel" data-slide-to="8"></li>
+		    </ol>
+		
+		    <!-- Wrapper for slides -->
+		    <div class="carousel-inner" role="listbox">
+		      <div class="item active">
+		        <img src="image/Event/bangbangbang/p1.jpg" width="460" height="345">
+		      </div>
+		      <div class="item">
+		        <img src="image/Event/bangbangbang/p2.jpg" width="460" height="345">
+		      </div>
+		      <div class="item">
+		        <img src="image/Event/bangbangbang/p3.jpg" width="460" height="345">
+		      </div>
+		      <div class="item">
+		        <img src="image/Event/bangbangbang/p4.jpg" width="460" height="345">
+		      </div>
+			  <div class="item">
+		        <img src="image/Event/bangbangbang/p5.jpg" width="460" height="345">
+		      </div>
+			  <div class="item">
+		        <img src="image/Event/bangbangbang/p6.jpg" width="460" height="345">
+		      </div>
+			  <div class="item">
+		        <img src="image/Event/bangbangbang/p7.jpg" width="460" height="345">
+		      </div>
+			  <div class="item">
+		        <img src="image/Event/bangbangbang/p8.jpg" width="460" height="345">
+		      </div>
+			  <div class="item">
+		        <img src="image/Event/bangbangbang/p9.jpg" width="460" height="345">
+		      </div>
+		    </div>
+		
+		    <!-- Left and right controls -->
+		    <a class="left carousel-control" href="#bukitCarousel" role="button" data-slide="prev">
+		      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+		      <span class="sr-only">Previous</span>
+		    </a>
+		    <a class="right carousel-control" href="#bukitCarousel" role="button" data-slide="next">
+		      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+		      <span class="sr-only">Next</span>
+		    </a>
+		  </div>  
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+  <!-- Modal for Tarcian Come On-->
+  <div class="modal fade" id="tarci" role="dialog">
+    <div class="modal-dialog modal-lg">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Tarcian Come On</h4>
+        </div>
+        <div class="modal-body">
+          <p>Date : 21th November 2015</p>
+          
+          <div id="tarciCarousel" class="carousel slide" data-ride="carousel">
+		    <!-- Indicators -->
+		    <ol class="carousel-indicators">
+		      <li data-target="#tarciCarousel" data-slide-to="0" class="active"></li>
+		      <li data-target="#tarciCarousel" data-slide-to="1"></li>
+		      <li data-target="#tarciCarousel" data-slide-to="2"></li>
+		      <li data-target="#tarciCarousel" data-slide-to="3"></li>	      
+			  <li data-target="#tarciCarousel" data-slide-to="4"></li>
+			  <li data-target="#tarciCarousel" data-slide-to="5"></li>
+			  <li data-target="#tarciCarousel" data-slide-to="6"></li>
+			  <li data-target="#tarciCarousel" data-slide-to="7"></li>
+			  <li data-target="#tarciCarousel" data-slide-to="8"></li>
+			  <li data-target="#tarciCarousel" data-slide-to="9"></li>
+			  <li data-target="#tarciCarousel" data-slide-to="10"></li>
+			  <li data-target="#tarciCarousel" data-slide-to="11"></li>			  
+		    </ol>
+		
+		    <!-- Wrapper for slides -->
+		    <div class="carousel-inner" role="listbox">
+		      <div class="item active">
+		        <img src="image/Event/tarcian/p1.jpg" width="460" height="345">
+		      </div>
+		      <div class="item">
+		        <img src="image/Event/tarcian/p2.jpg" width="460" height="345">
+		      </div>
+		      <div class="item">
+		        <img src="image/Event/tarcian/p3.jpg" width="460" height="345">
+		      </div>
+		      <div class="item">
+		        <img src="image/Event/tarcian/p4.jpg" width="460" height="345">
+		      </div>
+			  <div class="item">
+		        <img src="image/Event/tarcian/p5.jpg" width="460" height="345">
+		      </div>
+			  <div class="item">
+		        <img src="image/Event/tarcian/p6.jpg" width="460" height="345">
+		      </div>
+			  <div class="item">
+		        <img src="image/Event/tarcian/p7.jpg" width="460" height="345">
+		      </div>
+			  <div class="item">
+		        <img src="image/Event/tarcian/p8.jpg" width="460" height="345">
+		      </div>
+			  <div class="item">
+		        <img src="image/Event/tarcian/p9.jpg" width="460" height="345">
+		      </div>
+		      <div class="item">
+		        <img src="image/Event/tarcian/p10.jpg" width="460" height="345">
+		      </div>
+		      <div class="item">
+		        <img src="image/Event/tarcian/p11.jpg" width="460" height="345">
+		      </div>
+		      <div class="item">
+		        <img src="image/Event/tarcian/p12.jpg" width="460" height="345">
+		      </div>
+
+		      
+		    </div>
+		
+		    <!-- Left and right controls -->
+		    <a class="left carousel-control" href="#tarciCarousel" role="button" data-slide="prev">
+		      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+		      <span class="sr-only">Previous</span>
+		    </a>
+		    <a class="right carousel-control" href="#tarciCarousel" role="button" data-slide="next">
+		      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+		      <span class="sr-only">Next</span>
+		    </a>
+		  </div> 
+          
+          
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+</div>
+
+<!-- Contract -->
+<div id="contract" class="container-fluid">
+  <h1>Contract</h1>
+  <h3>The member position list of 2015</h3>
+  <table class="table table-hover" >
+    <thead>
+      <tr>
+        <th>Position</th>
+        <th>Name</th>
+        <th> </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>President</td>
+        <td>Mr. Teo Khoon Teng</td>
+        <td> </td>
+      </tr>
+      <tr>
+        <td>Vice President</td>
+        <td>Mr. Low Sik Chuen</td>
+        <td> </td>
+      </tr>
+      <tr>
+        <td>Secretary</td>
+        <td>Ms. Tan Xin Yie</td>
+        <td> </td>
+      </tr>
+      <tr>
+        <td>Treasurer</td>
+        <td>Ms. Ester Ng Pei Xin</td>
+        <td> </td>
+      </tr>
+      <tr>
+        <td>Deputy Treasurer</td>
+        <td>Mr. Yeo Gee Huat</td>
+        <td> </td>
+      </tr>
+      <tr>
+        <td>Discipline Master</td>
+        <td>Ms. Tew Yu Xin</td>
+        <td> </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- About -->
+<div id="about" class="container-fluid">
+  <h1>About</h1>
+  
+  <div class="col-md-4">
+    <a href="image/logo.png">
+        <!-- Thumbnail-->
+        <img src="image/logo.png" class="animated fadeIn infinite" alt="Society logo" height=179 width=220 data-toggle="tooltip" data-placement="bottom" title="Society logo" class="img-fluid">
+    </a>
+        <img src="image/tarucLogo.jpg" alt="Taruc logo" data-toggle="tooltip" data-placement="bottom" title="Taruc logo" /><br />
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7972.258379090089!2d102.9010459!3d2.46409!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcf57a74bd59c5835!2sTunku+Abdul+Rahman+College+%40+Johor!5e0!3m2!1sen!2smy!4v1467273059148" frameborder="0" style="border:0" allowfullscreen></iframe>
+  </div>
+  
+  <div class="col-md-8" >
+  <blockquote>
+    <p>Taekwon-Do is a Korean martial art, an effective art of self defence as well as a competitive sport. Taekwon-Do society was established in 2013 by Mr. Teo Khoon Teng on TAR universities college.</p>
+    <p>We are using "zero" to be our society logo, this is because we are start from begin, we are start from nothing, but we have the change to beyond everyone. "Zero" is also mean we come together, like a familly.</p>
+    <p>Taekwondo society's aim is to provide an environment to self defence with physical, mental and spiritual training. Our society also help to bodybuilding, stamina, flexibility.</p>
+  </blockquote>
+  <a href="image/TKD tenets.jpg">
+  <img src="image/TKD tenets.jpg" alt="COURTEST,INTEGRITY,PERSEVERANCE,SELF-CONTROL,INDOMITABLE SPIRIT" data-toggle="tooltip" data-placement="bottom" title="COURTEST, INTEGRITY, PERSEVERANCE, SELF-CONTROL, INDOMITABLE SPIRIT" style="width:544px" class="img-thumbnail" /><br />
+  
+</div>
+</div>
+
+<footer class="footer" style="background-color:white">
+	<div class="container">
+        <p class="text-muted"><strong>&copy; Copyright 2016 xxxxx.xx</strong></p>
+    </div>    
+</footer>
+</body>
+</html>
