@@ -1,3 +1,7 @@
 ﻿#pageType:before {
   content: "Mobile";
 }
+
+#slide {
+	height:600px;
+}
