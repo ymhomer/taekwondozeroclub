@@ -534,7 +534,7 @@ alert(audioStatus);
 		audioStatus = 0;
 		document.getElementById('musicControl').innerHTML = 'Music Off';
 	}
-	else{
+	else if (audioStatus = 0){
 		alert('play');
 		playAudio();
 		audioStatus = 1;
