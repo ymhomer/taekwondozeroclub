@@ -48,12 +48,14 @@ $(document).ready(function(){
     	//alert('Big');
     	var obj = document.getElementById('slide').style.height = '600px';
     	var obj = document.getElementById('myCarousel').style.height = '600px';
+    	var obj = document.getElementsByClassName('popSlide').style.height = '600px';
+
     }
     else{
     	//alert('Small');
     	var obj = document.getElementById('slide').style.height = '200px';
     	var obj = document.getElementById('myCarousel').style.height = '200px';
-
+		var obj = document.getElementsByClassName('popSlide').style.height = '200px';
     }
     
     //update msgLog
@@ -320,7 +322,7 @@ $(function() {
 		    </ol>
 		
 		    <!-- Wrapper for slides -->
-		    <div class="carousel-inner" role="listbox">
+		    <div class="carousel-inner popSlide" role="listbox">
 		      <div class="item active">
 		        <img src="image/Event/bangbangbang/p1.jpg" width="460" height="345">
 		      </div>
@@ -400,7 +402,7 @@ $(function() {
 		    </ol>
 		
 		    <!-- Wrapper for slides -->
-		    <div class="carousel-inner" role="listbox">
+		    <div class="carousel-inner popSilde" role="listbox">
 		      <div class="item active">
 		        <img src="image/Event/tarcian/p1.jpg" width="460" height="345">
 		      </div>
