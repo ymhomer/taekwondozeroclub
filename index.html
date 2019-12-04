@@ -42,31 +42,6 @@
 $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip();
 });
-
-var xAudio = document.getElementById("myAudio");
-var audioStatus = 1;//1 = on
-
-function controlAudio() {
-alert(audioStatus);
-	if (audioStatus = 1){
-		//pauseAudio();
-		audioStatus = 0;
-		document.getElementById('musicControl').innerHTML = 'Music Off';
-	}
-	else{
-		//playAudio();
-		audioStatus = 1;
-		document.getElementById('musicControl').innerHTML = 'Music ON';
-	}
-}
-
-function playAudio() { 
-  //xAudio.play(); 
-} 
-
-function pauseAudio() { 
-  //xAudio.pause(); 
-} 
 </script>
 
 <!-- smooth page scroll
@@ -547,5 +522,34 @@ $(function() {
         <p class="text-muted"><strong>&copy; Copyright 2016 taekwandozeroclub.com</strong></p>
     </div>    
 </footer>
+</style>
+
+<!-- tooltip function -->
+var xAudio = document.getElementById("myAudio");
+var audioStatus = 1;//1 = on
+
+function controlAudio() {
+alert(audioStatus);
+	if (audioStatus = 1){
+		pauseAudio();
+		audioStatus = 0;
+		document.getElementById('musicControl').innerHTML = 'Music Off';
+	}
+	else{
+		playAudio();
+		audioStatus = 1;
+		document.getElementById('musicControl').innerHTML = 'Music ON';
+	}
+}
+
+function playAudio() { 
+  xAudio.play(); 
+} 
+
+function pauseAudio() { 
+  xAudio.pause(); 
+} 
+</script>
+
 </body>
 </html>
