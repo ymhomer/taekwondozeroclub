@@ -528,13 +528,13 @@ var audioStatus = 1;//1 = on
 
 function controlAudio() {
 alert(audioStatus);
-	if (audioStatus = 1){
+	if (audioStatus == 1){
 		alert('pause');
 		pauseAudio();
 		audioStatus = 0;
 		document.getElementById('musicControl').innerHTML = 'Music Off';
 	}
-	else if (audioStatus = 0){
+	else{
 		alert('play');
 		playAudio();
 		audioStatus = 1;
