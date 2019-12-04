@@ -50,10 +50,12 @@ function controlAudio() {
 	if (audioStatus = 1){
 		pauseAudio();
 		audioStatus = 0;
+		document.getElementById('musicControl').innerHTML = 'Music Off';
 	}
 	else{
 		playAudio();
 		audioStatus = 1;
+		document.getElementById('musicControl').innerHTML = 'Music ON';
 	}
 }
 
