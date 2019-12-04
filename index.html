@@ -42,6 +42,7 @@
 <script>
 $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip();
+    
     var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
     if (width > 720){
     	//alert('Big');
@@ -54,6 +55,10 @@ $(document).ready(function(){
     	var obj = document.getElementById('myCarousel').style.height = '200px';
 
     }
+    
+    //update msgLog
+    document.getElementById('musicControl').innerHTML = '20191204 (Testing) updated feature - background music play <br /> - fixed carousel size';
+
 });
 </script>
 
@@ -82,7 +87,7 @@ $(function() {
   <source src="sound/Believer.mp3" type="audio/mpeg" >
 </audio>
 <!-- header -->
-<div id="msgLog"><h6>(Testing) updated feature - background music play - 20191204<br /> - Music control button on the navbar or you can try <a href="#" onclick="controlAudio()">here</a> to control the playback.</h6></div>
+<div id="msgLog"><h6><br /> - Music control button on the navbar or you can try <a href="#" onclick="controlAudio()">here</a> to control the playback.</h6></div>
 <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
